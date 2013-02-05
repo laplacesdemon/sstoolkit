@@ -12,6 +12,17 @@
 @interface UIColor (SSToolkitAdditions)
 
 /**
+ Creates and returns an UIColor object with fixed RGB values
+ 
+ @param R The value of the red component
+ @param G The value of the green component
+ @param B The value of the blue component
+ 
+ @return An UIColor object containing a value.
+ */
++ (UIColor *)colorWithR:(CGFloat)red G:(CGFloat)green B:(CGFloat)blue A:(CGFloat)alpha;
+
+/**
  Creates and returns an UIColor object containing a given value.
  
  @param hex The value for the new color. The `#` sign is not required.
